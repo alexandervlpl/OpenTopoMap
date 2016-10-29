@@ -42,13 +42,13 @@
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom14;
-		<Filter>([historic] = 'ruins') or (([ruins] = 'yes') and ([historic] = 'castle'))</Filter>
+		<Filter>([historic] = 'ruins') or ([historic] = 'castle')</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/castle_ruins_z13.png" transform="translate(2 -3)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom17;
-		<Filter>([historic] = 'ruins') or (([ruins] = 'yes') and ([historic] = 'castle'))</Filter>
+		<Filter>([historic] = 'ruins') or ([historic] = 'castle')</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/castle_ruins.png" transform="translate(2 -3)"/>
 	</Rule>
 </Style>

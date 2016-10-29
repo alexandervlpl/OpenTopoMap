@@ -54,13 +54,13 @@
 	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom14;
-		<Filter>([man_made] = 'communications_tower') or ([communication:radio] = 'yes') or ([communication:television] = 'yes')</Filter>
+		<Filter>([man_made] = 'communications_tower')</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/communications_tower_z13.png" transform="translate(0 -5)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom17;
-		<Filter>([man_made] = 'communications_tower') or ([communication:radio] = 'yes') or ([communication:television] = 'yes')</Filter>
+		<Filter>([man_made] = 'communications_tower')</Filter>
 		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="1" halo-fill="rgba(255,255,255,0.9)" placement="point" dy="8" wrap-width="100">[name]</TextSymbolizer>
 	</Rule>
 
@@ -138,13 +138,13 @@
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>(([natural] = 'tree') and (not ([name] = null) or ([denotation] = 'landmark')) and (not ([type] = 'conifer')))</Filter>
+		<Filter>(([natural] = 'tree') and (not ([name] = null)))</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/conifer_tree.png" transform="translate(0 -5)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>(([natural] = 'tree') and (not ([name] = null) or ([denotation] = 'landmark')) and ([type] = 'conifer'))</Filter>
+		<Filter>(([natural] = 'tree') and (not ([name] = null)))</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/conifer_tree.png" transform="translate(0 -5)"/>
 	</Rule>
 	<Rule>
@@ -175,13 +175,13 @@
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>(([historic] = 'memorial' and [memorial:type] != 'stolperstein') or ([historic] = 'monument'))</Filter>
+		<Filter>(([historic] = 'memorial') or ([historic] = 'monument'))</Filter>
 		<MarkersSymbolizer placement="point" file="symbols-otm/monument.png" transform="translate(0 -2)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>(([historic] = 'archaeological_site') and ([site_type] = 'tumulus'))</Filter>
+		<Filter>[historic] = 'archaeological_site'</Filter>
 		<PointSymbolizer file="symbols-otm/tumulus.png"/>
 	</Rule>
 	<Rule>
@@ -193,13 +193,13 @@
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom17;
-		<Filter>(([man_made] = 'mineshaft') or ([man_made] = 'adit')) and not (([disused] = 'yes') or ([abandoned] = 'yes'))</Filter>
+		<Filter>(([man_made] = 'mineshaft') or ([man_made] = 'adit')) and not (([disused] = 'yes'))</Filter>
 		<PointSymbolizer file="symbols-otm/mineshaft.png"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom17;
-		<Filter>(([man_made] = 'mineshaft') or ([man_made] = 'adit')) and (([disused] = 'yes') or ([abandoned] = 'yes'))</Filter>
+		<Filter>(([man_made] = 'mineshaft') or ([man_made] = 'adit')) and (([disused] = 'yes'))</Filter>
 		<PointSymbolizer file="symbols-otm/mineshaft_disused.png"/>
 	</Rule>
 	

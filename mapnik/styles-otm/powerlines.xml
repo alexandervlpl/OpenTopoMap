@@ -9,7 +9,7 @@
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>([power] = 'minor_line') and (([voltage] &gt; '10000') or ([voltage] = null))</Filter>
+		<Filter>[power] = 'minor_line'</Filter>
 		<LinePatternSymbolizer file="symbols-otm/powerline.png"/>
 		<LineSymbolizer stroke="black" stroke-width="0.5"/>
 	</Rule>

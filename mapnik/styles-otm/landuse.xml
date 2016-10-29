@@ -57,7 +57,7 @@
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom17;
-		<Filter>([landuse] = 'hop_garden' or [crop] = 'hop')</Filter>
+		<Filter>[landuse] = 'hop_garden'</Filter>
 		<PolygonPatternSymbolizer file="symbols-otm/hop.png"/>
 	</Rule>
 	<Rule>
